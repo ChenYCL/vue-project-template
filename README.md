@@ -1,4 +1,3 @@
-# rbtc-monitor
 
 ## Project setup
 ```
