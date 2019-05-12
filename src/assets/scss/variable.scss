@@ -1,0 +1,32 @@
+/*创建bg-image($url)函数*/
+@mixin bg-image($url) {
+    background-image: url( $url + ".png");
+    @media(-webkit-min-device-pixel-ratio: 2) {
+      background-image: url( $url + "@2x.png")
+    }
+    @media(min-device-pixel-ratio: 2) {
+      background-image: url($url + "@2x.png")
+    }
+    @media(-webkit-min-device-pixel-ratio: 3) {
+      background-image: url( $url + "@2x.png")
+    }
+    @media(min-device-pixel-ratio: 3) {
+      background-image: url($url + "@2x.png")
+    }
+  }
+  
+  $normal-color: white;
+  $box-border-color: rgba(255, 255, 255, 0.15);
+  $box-linear-bg-color: linear-gradient(180deg, rgba(32, 127, 254, 0) 0%, rgba(32, 127, 254, 0.1) 97%);
+  /*安全信息 icon颜色*/
+  $icon1:rgba(129,33,215,1);
+  $icon2:rgba(15,178,248,1);
+  $icon3:rgba(0,52,255,1);
+  $icon4:rgba(169,169,169,1);
+  $icon5:rgba(169,169,169,1);
+  
+  /*24H币种*/
+  $num1:#F59E40;
+  $num2:#8121D7;
+  $num3:#0DB2F8;
+  $num4:#0034FF;
